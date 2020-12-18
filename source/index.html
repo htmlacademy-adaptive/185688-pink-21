@@ -6,67 +6,64 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrapper">
-      <a class="logo">
-        <img class="logo__logo-title logo__logo-title--header" src="https://via.placeholder.com" width="74" height="23" alt="Приложение PINK">
-      </a>
       <nav class="site-nav">
+        <a class="site-nav__logo logo">
+        <img class="logo__img" src="https://via.placeholder.com" width="74" height="23" alt="Приложение PINK">
+        </a>
         <button class="site-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="site-nav__list site-list">
-            <li class="site-list__item">
-              <a href="#">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">
+        <ul class="site-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
               Фотографии
             </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
               Конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
               HTML Academy
             </a>
-            </li>
-          </ul>
+          </li>
+        </ul>
       </nav>
-    </div>
-  </header>
+    </header>
     <main class="page-main">
       <h1 class="visually-hidden">Приложение PINK - поделись своими фотографиями!</h1>
       <section class="application">
-        <div class="application__wrapper">
+        <div class="wrapper">
           <h2 class="visually-hidden">Установить наше приложение</h2>
-          <h3 class="application__slogan">Взгляните на жизнь
-иначе!</h3>
-          <ul class="application__list apps-link-list">
+          <div class="application__slogan">
+            <h3 class="application__title">Взгляните на жизнь иначе!</h3>
+          </div>
+          <a class="application__download" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+          <ul class="application__list apps">
             <li>
-              <button class="apps-link-list__item" type="button">Скачать приложение</button>
+              <a class="apps__item apps__item--ios" href="https://www.apple.com/ru/app-store/">Приложение для iOS</a>
             </li>
             <li>
-              <a class="apps-link-list__item apps-link-list__item--iOS" href="https://www.apple.com/ru/app-store/">Приложение для iOS</a>
+              <a class="apps__item apps__item--android" href="https://play.google.com/store/apps?hl=ru&gl=US">Приложение для Android</a>
             </li>
             <li>
-              <a class="apps-link-list__item apps-link-list__item--Android" href="https://play.google.com/store/apps?hl=ru&gl=US">Приложение для Android</a>
-            </li>
-            <li>
-              <a class="apps-link-list__item apps-link-list__item--Windows-Phone" href="https://www.microsoft.com/ru-ru/store/apps/windows">Приложение для Windows Phone</a>
+              <a class="apps__item apps__item--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows">Приложение для Windows Phone</a>
             </li>
           </ul>
           <p class="application__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
       <section class="advantages">
-        <div class="advantages__wrapper">
+        <div class="wrapper">
           <header class="advantages__header">
             <h2 class="visually-hidden">Наши преимущества</h2>
-            <p class="advantages__slogan">Устали от серости мегаполиса?<br>Нам есть, что вам
-предложить!</p>
+            <p class="advantages__slogan">Устали от серости мегаполиса?</p>
+            <p class="advantages__slogan">Нам есть, что вам предложить!</p>
           </header>
           <ul class="advantages__list">
             <li class="advantages__item advantages__title--mood">
@@ -85,7 +82,7 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wrapper slider">
+        <div class="wrapper slider">
           <h2 class="visually-hidden">Отзывы о нас</h2>
           <div class="reviews__list">
             <blockquote class="reviews__item">
@@ -101,79 +98,77 @@
         </div>
       </section>
       <section class="price slider">
-        <div class="price__wrapper">
-         <h2 class="visually-hidden">Наши тарифы</h2>
-         <ul class="price__list ">
-           <li class="price__item">
-             СТАНДАРТ 3,99 USD
-           </li>
-           <li class="price__option price__option--yes">
-            Розовый фильтр
-           </li>
-           <li class="price__option price__option--yes">
-            Смайлики
-           </li>
-           <li class="price__option price__option--no">
-            Комментарии
-           </li>
-         </ul>
-         <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle slider__toggle--current" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+        <div class="wrapper">
+          <h2 class="visually-hidden">Наши тарифы</h2>
+          <div class="price__list">
+            <div class="price__item">
+              <h3>СТАНДАРТ</h3>
+              <p>3,99 USD</p>
+            </div>
+            <ul class="price__options">
+             <li class="price__option price__option--yes">
+              Розовый фильтр
+             </li>
+             <li class="price__option price__option--yes">
+              Смайлики
+             </li>
+             <li class="price__option price__option--no">
+              Комментарии
+             </li>
+            </ul>
+          </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--current" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
           </p>
         </div>
       </section>
       <footer class="page-footer">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <div class="page-footer__wrapper">
+        <div class="wrapper">
           <p class="page-footer__title">Остались вопросы?<br>Свяжитесь с нами!</p>
-          <div class="page-footer__contacts contacts">
-                <ul class="contacts__list">
-                  <li class="contacts__item">
-                    <b>Звоните:</b>
-                    <a class="contacts__phone" href="tel:+78125556666">
-                    +7 (812) 555-66-66
-                    </a>
-                  </li>
-                  <li class="contacts__item">
-                    <b>Пишите:</b>
-                    <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">
-                    mail@htmlacademy.ru
-                    </a>
-                  </li>
-                  <li>
-                    <b>Приезжайте в гости:</b>
-                    <a class="contacts__address" href="https://goo.gl/maps/aWZUKMT948Fj8hpw5">
-                    ул. Большая<br>Конюшенная, 19/8
-                    </a>
-                  </li>
-                </ul>
-          </div>
+          <ul class="page-footer__contacts contacts">
+            <li class="contacts__item">
+              <h3>Звоните:</h3>
+              <a class="contacts__phone" href="tel:+78125556666">
+              +7 (812) 555-66-66
+              </a>
+            </li>
+            <li class="contacts__item">
+              <h3>Пишите:</h3>
+              <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">
+              mail@htmlacademy.ru
+              </a>
+            </li>
+            <li>
+              <h3>Приезжайте в гости:</h3>
+              <a class="contacts__address" href="https://goo.gl/maps/aWZUKMT948Fj8hpw5">
+              ул. Большая Конюшенная, 19/8
+              </a>
+            </li>
+          </ul>
           <div class="page-footer__map">
-            <img src="https://via.placeholder.com" alt="Наше местоположение">
+            <img src="https://via.placeholder.com" width="660" height="374" alt="Наше местоположение">
           </div>
           <div class="page-footer__logo">
             <a class="logo">
-              <img class="logo__logo-image logo__logo-image--footer" src="https://via.placeholder.com" width="59" height="40" alt="Приложение PINK">
-              <img class="logo__logo-title logo__logo-title--footer" src="https://via.placeholder.com" width="74" height="23" alt="Приложение PINK">
+              <img class="logo__img" src="https://via.placeholder.com" width="145" height="40" alt="Приложение PINK">
             </a>
           </div>
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="page-footer__social social">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
+            </li>
+          </ul>
           <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
+            <span class="copyright__text">Разработано:</span>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </div>
         </div>
